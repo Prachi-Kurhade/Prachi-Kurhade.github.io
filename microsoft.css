@@ -1,0 +1,110 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+html,body
+{
+    width : 100%;
+    height : 100%;
+}
+#navbar{
+    height : 54px;
+    background-color:ghostwhite;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+   /* padding : 0 1px;
+    margin-left: 0%;*/
+}
+#navbar .left{
+    
+    margin-left: -150px;
+
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navbar .left .link{
+    padding : 0 8px;   
+}
+#navbar .left .link a{
+    color: #262626;
+    white-space: normal;
+    text-decoration: none;
+    font-weight: 100px;
+    font-size: 13px;
+    font-family: Helvetica;
+}
+#navbar .right{
+    display : flex;
+}
+#navbar .right .link{
+    padding : 0 8px;
+} 
+#navbar .right .link a{
+    color: #262626;
+    white-space: normal;
+    text-decoration: none;
+    font-weight: 100px;
+    font-size: 13px;
+    font-family: Helvetica;
+}
+
+.logo{
+    width : 108px;
+}
+i{
+    color: #262626;
+    font-weight: 100px;
+}
+
+#navbar .left .link:hover{
+    /*backgroundd-color : red;
+    padding: 5px 5px;*/
+    border-bottom : 2px solid black;
+}
+#navbar .right .link:hover{
+    /*backgroundd-color : red;
+    padding: 5px 5px;*/
+    border-bottom : 2px solid black;
+}
+#background{
+    background-image: url(https://images.unsplash.com/photo-1681485099291-865c444f8b17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-size: cover;
+    height : 100vh;
+    width : 100%;
+}
+#overlay{
+    background-color: rgba(0, 0, 0, 0.768);
+    height : 100vh;
+    width : 100%;
+    position: relative;
+}
+.content{
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+.content h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content p{
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.content button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
